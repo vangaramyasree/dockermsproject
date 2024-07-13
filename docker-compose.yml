@@ -7,7 +7,7 @@ services:
     deploy:
       replicas: 3
     volumes:
-      - "movies"
+      - movies
   train:
     image: sreevanga/popuptrain:latest
     ports:
@@ -15,7 +15,7 @@ services:
     deploy:
       replicas: 3
     volumes:
-      - "train"
+      - train
   dth:
     image: sreevanga/popupdth:latest
     ports:
@@ -23,7 +23,7 @@ services:
     deploy:
       replicas: 3
     volumes:
-      - "dth"
+      - dth
   recharge:
     image: sreevanga/popuprecharge:latest
     ports:
@@ -31,4 +31,4 @@ services:
     deploy:
       replicas: 3
     volumes:
-      - "recharge"
+      - recharge
